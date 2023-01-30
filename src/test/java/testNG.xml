@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" verbose="1" name="Smoke Suite" annotations="JDK" parallel="tests">
+
+    <test name="login">
+        <classes>
+            <class name="loginTests.LoginTests"/>
+        </classes>
+    </test>
+
+    <test name="dropdown">
+        <classes>
+            <class name="Dropdown.DropdownTests"/>
+        </classes>
+    </test>
+
+    <test name="HoverTests">
+        <classes>
+            <class name="hoverTests.HoverTests"/>
+        </classes>
+    </test>
+
+    <test name="FrameTests">
+        <classes>
+            <class name="FrameTests.FrameTests"/>
+        </classes>
+    </test>
+
+</suite>
